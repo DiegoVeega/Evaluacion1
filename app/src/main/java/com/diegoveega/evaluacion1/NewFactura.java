@@ -31,7 +31,9 @@ public class NewFactura extends AppCompatActivity {
         if(m_newintent != null){
             mtv_esuser.setText(m_newintent.getStringExtra(AppConstant.Nombre_key));
             mtv_escorreo.setText(m_newintent.getStringExtra(AppConstant.Correo_key));
+            Aux_text = m_newintent.getStringExtra(Intent.EXTRA_TEXT);
         }
+        mtv_estotal.setText(Aux_text);
 
         mbt_share.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -8,15 +8,27 @@
     android:orientation="vertical"
     android:padding="@dimen/layout_padding_general">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contador de productos"
-        android:gravity="center"
-        android:textColor="@color/dark_color_text"
-        android:textStyle="bold"
-        android:textSize="@dimen/textSize_Big"
-        android:layout_weight="1"/>
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contador de productos"
+            android:textColor="@color/dark_color_text"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize_Big"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
 
     <LinearLayout
 
@@ -32,6 +44,7 @@
             android:baselineAligned="false">
 
             <LinearLayout
+                android:background="@color/c1"
                 android:id="@+id/bt_11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,13 +61,15 @@
                 <TextView
                     android:id="@+id/bt_11R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/bt_12"
+                android:background="@color/c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -68,14 +83,17 @@
                     android:text="Pera" />
 
                 <TextView
+                    android:id="@+id/bt_12R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/bt_13"
+                android:background="@color/c3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -89,8 +107,10 @@
                     android:text="Naranja" />
 
                 <TextView
+                    android:id="@+id/bt_13R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
@@ -106,6 +126,7 @@
             android:padding="10dp">
 
             <LinearLayout
+                android:background="@color/c4"
                 android:id="@+id/bt_21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -117,16 +138,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Manzana" />
+                    android:text="Res" />
 
                 <TextView
+                    android:id="@+id/bt_21R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/c5"
                 android:id="@+id/bt_22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -138,16 +162,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Pera" />
+                    android:text="Pollo" />
 
                 <TextView
+                    android:id="@+id/bt_22R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
 
             <LinearLayout
+                android:background="@color/c6"
                 android:id="@+id/bt_23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,11 +186,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Naranja" />
+                    android:text="Cerdo" />
 
                 <TextView
+                    android:id="@+id/bt_23R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
@@ -179,6 +208,7 @@
             android:padding="10dp">
 
             <LinearLayout
+                android:background="@color/c7"
                 android:id="@+id/bt_31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -190,17 +220,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Manzana" />
+                    android:text="Churros" />
 
                 <TextView
+                    android:id="@+id/bt_31R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/bt_32"
+                android:background="@color/c8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -211,17 +244,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Pera" />
+                    android:text="Pastel" />
 
                 <TextView
+                    android:id="@+id/bt_32R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/bt_33"
+                android:background="@color/c9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -232,11 +268,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Naranja" />
+                    android:text="Galleta" />
 
                 <TextView
+                    android:id="@+id/bt_33R"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
 
 
             </LinearLayout>
