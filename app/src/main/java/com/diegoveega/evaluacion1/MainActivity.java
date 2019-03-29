@@ -17,11 +17,10 @@ public class MainActivity extends AppCompatActivity {
     EditText mCorreo;
     Integer contador=0;
 
-    Button bt_11;
+    LinearLayout bt_11;
     TextView bt_11R;
 
     Button mbt_submit;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
         mNombre = findViewById(R.id.et_nombre);
         mCorreo = findViewById(R.id.et_correo);
+        mbt_submit = findViewById(R.id.bt_send);
 
 
 
         bt_11=findViewById(R.id.bt_11);
-       // bt_11R= findViewById(R.id.bt_11R);
+        bt_11R= findViewById(R.id.bt_11R);
 
         bt_11.setOnClickListener(new View.OnClickListener() {
             @Override
